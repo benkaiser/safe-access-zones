@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An indicative map of safe-access zones around publicly listed pregnancy-termination services in Australia."
+    />
+    <title>Safe Access Zones Australia</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#map">Skip to map</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Map controls">
+        <header>
+          <p class="eyebrow">Australia</p>
+          <h1>Safe Access Zones</h1>
+          <p class="lede">
+            Indicative areas around publicly listed pregnancy-termination services.
+          </p>
+        </header>
+
+        <div class="notice" role="note">
+          These boundaries are a planning aid, not legal advice. Rules differ by
+          jurisdiction.
+        </div>
+
+        <section aria-labelledby="layers-heading">
+          <h2 id="layers-heading">Facilities</h2>
+          <div id="category-filters" class="filter-list"></div>
+        </section>
+
+        <footer>
+          <p>
+            Location data:
+            <a href="https://www.healthdirect.gov.au/australian-health-services">
+              Healthdirect National Health Services Directory (NHSD)</a>.
+            Last synced <time id="source-sync-date">date unavailable</time>.
+          </p>
+          <p>
+            Building data:
+            <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>.
+          </p>
+          <p>
+            <a href="./admin.html">Suggest a location change</a> ·
+            <a href="https://github.com/benkaiser/safe-access-zones">GitHub</a>
+          </p>
+        </footer>
+      </aside>
+      <main id="map" aria-label="Map of indicative safe-access zones"></main>
+      <div id="map-status" class="map-status" role="status">Loading map data…</div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

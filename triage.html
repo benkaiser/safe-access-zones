@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Safe Access Zones – Footprint Triage</title>
+  </head>
+  <body>
+    <div class="triage-shell">
+      <aside class="triage-queue-panel">
+        <header>
+          <p class="eyebrow">Local tool</p>
+          <h1>Footprint triage</h1>
+          <p class="lede">Resolve unmatched service locations one at a time.</p>
+        </header>
+
+        <div class="triage-progress" aria-live="polite">
+          <div class="triage-progress-label">
+            <strong id="triage-progress-text">0 of 0 reviewed</strong>
+            <span id="triage-progress-percent">0%</span>
+          </div>
+          <div class="triage-progress-track">
+            <span id="triage-progress-bar"></span>
+          </div>
+        </div>
+
+        <label for="triage-filter">Queue filter</label>
+        <select id="triage-filter">
+          <option value="unreviewed">Unreviewed first</option>
+          <option value="all">All unresolved locations</option>
+          <option value="likely-geocode-offset-near-building-edge">Likely geocode offsets</option>
+          <option value="nearby-buildings-require-manual-selection">Ambiguous nearby buildings</option>
+          <option value="no-close-containing-footprint">No close footprint</option>
+          <option value="reviewed">Reviewed decisions</option>
+        </select>
+
+        <nav id="triage-queue" class="triage-queue" aria-label="Unmatched locations"></nav>
+
+        <footer>
+          <a href="./admin.html">Full location editor</a> ·
+          <a href="./">Public map</a>
+        </footer>
+      </aside>
+
+      <main id="triage-map" aria-label="Candidate footprint comparison map"></main>
+
+      <aside class="triage-decision-panel">
+        <header>
+          <p id="triage-position" class="eyebrow"></p>
+          <h2 id="triage-name" class="triage-name"></h2>
+          <p id="triage-place" class="lede"></p>
+          <div id="triage-reason" class="notice"></div>
+          <p id="triage-provider-links" class="help-text"></p>
+        </header>
+
+        <section>
+          <h3>Nearby OSM footprints</h3>
+          <div id="candidate-list" class="candidate-list"></div>
+        </section>
+
+        <section>
+          <h3>Decision</h3>
+          <div class="decision-actions" role="group" aria-label="Triage decision">
+            <button
+              id="accept-candidate"
+              class="secondary"
+              type="button"
+              aria-pressed="false"
+            >
+              Use selected footprint
+            </button>
+            <button
+              id="draw-triage-boundary"
+              class="secondary"
+              type="button"
+              aria-pressed="false"
+            >
+              Draw boundary
+            </button>
+            <button
+              id="keep-approximate"
+              class="secondary"
+              type="button"
+              aria-pressed="false"
+            >
+              Keep approximate circle
+            </button>
+            <button
+              id="defer-triage"
+              class="secondary"
+              type="button"
+              aria-pressed="false"
+            >
+              Defer
+            </button>
+          </div>
+          <p id="pending-decision" class="pending-decision">No decision selected.</p>
+
+          <label for="triage-note">Required evidence / decision note</label>
+          <textarea
+            id="triage-note"
+            rows="4"
+            placeholder="Why this footprint is correct, why the circle should remain, or what needs further research"
+          ></textarea>
+          <button id="save-triage" type="button">Save and go to next</button>
+          <p id="triage-status" class="help-text" role="status"></p>
+        </section>
+
+        <section>
+          <h3>Overrides file</h3>
+          <p class="help-text">
+            Saved decisions write directly to <code>data/curation-overrides.json</code>.
+            Export is available as a backup.
+          </p>
+          <div class="button-row">
+            <button id="export-triage" type="button">Export backup</button>
+            <label class="file-button secondary">
+              Import overrides
+              <input id="import-triage" type="file" accept="application/json,.json" />
+            </label>
+          </div>
+          <button id="reset-local-triage" class="text-button" type="button">
+            Reload repository file
+          </button>
+        </section>
+
+        <div class="triage-navigation">
+          <button id="previous-triage" class="secondary" type="button">Previous</button>
+          <button id="next-triage" class="secondary" type="button">Next</button>
+        </div>
+      </aside>
+    </div>
+    <script type="module" src="/src/triage.ts"></script>
+  </body>
+</html>

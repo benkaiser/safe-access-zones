@@ -1,0 +1,902 @@
+[
+  {
+    "id": "d90e34a8-3486-c442-5d16-c6d483586785",
+    "name": "Macquarie Street Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "SYDNEY",
+    "state": "NSW",
+    "postcode": "2000",
+    "latitude": -33.8671875,
+    "longitude": 151.21202087402344,
+    "phone": "02 9221 1933",
+    "email": "",
+    "website": "https://www.contraceptiveservices.com",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "6bf7cdfa-f718-4938-b33a-6c015b323485",
+    "name": "MSI Sydney CBD Abortion & Contraception Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "SYDNEY",
+    "state": "NSW",
+    "postcode": "2000",
+    "latitude": -33.86699163,
+    "longitude": 151.21205948,
+    "phone": "1300 003 707",
+    "email": "info@msiaustralia.org.au",
+    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-sydney-cbd-clinic/",
+    "hours": {
+      "timezone": "",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "MSI Australia provides local anaesthetic non scalpel vasectomy procedures. Vasectomy is the only permanent method of contraception for men. It is safe, simple and effective and is the recommended family planning method for men who want a permanent solution to their contraceptive needs. For further information or appointments, please call our 24 hour freecall number 1300 336 043.",
+    "search_location": ""
+  },
+  {
+    "id": "37d7a483-8aa3-4c27-b1bc-c80942fe05da",
+    "name": "The Private Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "SURRY HILLS",
+    "state": "NSW",
+    "postcode": "2010",
+    "latitude": -33.886745,
+    "longitude": 151.209259,
+    "phone": "02 9690 0000",
+    "email": "reception@privateclinic.com.au",
+    "website": "https://www.privateclinic.com.au/",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "601c9353-c05f-490c-8321-99b8b786dd8a",
+    "name": "Double Bay Doctors",
+    "service_type": "Pregnancy termination",
+    "suburb": "DOUBLE BAY",
+    "state": "NSW",
+    "postcode": "2028",
+    "latitude": -33.87691879272461,
+    "longitude": 151.2448272705078,
+    "phone": "02 9328 3100",
+    "email": "",
+    "website": "",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "4cc90c9f-f709-4b77-9871-afbc316f008c",
+    "name": "Bondi Doctors",
+    "service_type": "Pregnancy termination",
+    "suburb": "BONDI BEACH",
+    "state": "NSW",
+    "postcode": "2026",
+    "latitude": -33.88889856,
+    "longitude": 151.26998404,
+    "phone": "02 9365 2833",
+    "email": "",
+    "website": "http://www.bondidoctors.com/",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "5cbea1be-ced0-49f9-9cc1-5383f8fd3903",
+    "name": "SK Medical Centre",
+    "service_type": "Pregnancy termination",
+    "suburb": "CAMPSIE",
+    "state": "NSW",
+    "postcode": "2194",
+    "latitude": -33.91333636,
+    "longitude": 151.10374929,
+    "phone": "02 9193 7850",
+    "email": "info@skmedicalcentre.com.au",
+    "website": "https://www.skmedicalcentre.com.au/",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "89271310-858b-4eeb-8163-2753dd07e1cb",
+    "name": "Rhodes Family Practice",
+    "service_type": "Pregnancy termination",
+    "suburb": "RHODES",
+    "state": "NSW",
+    "postcode": "2138",
+    "latitude": -33.82751141,
+    "longitude": 151.08713162,
+    "phone": "0297431760",
+    "email": "reception.rfp@gmail.com",
+    "website": "https://www.rhodesfamilypractice.com.au/",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "We offer health checks, chronic disease management, family planning, childhood immunisations, travel vaccines including Yellow Fever, minor procedures like iron infusion, rod implant insertion and replacement, IUD device insertion and ear wax removal.",
+    "search_location": ""
+  },
+  {
+    "id": "c3b84b15-0ba4-46b6-a726-5cad58e3dd88",
+    "name": "Vivant Medical Olympic Park",
+    "service_type": "Pregnancy termination",
+    "suburb": "LIDCOMBE",
+    "state": "NSW",
+    "postcode": "2141",
+    "latitude": -33.85065740135285,
+    "longitude": 151.06139035268686,
+    "phone": "02 8043 8810",
+    "email": "reception@vivantmedical.com.au",
+    "website": "https://www.vivantmedical.com.au/",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Acupuncture and Chinese Medicine",
+    "search_location": ""
+  },
+  {
+    "id": "2e6f8ddf-8f1b-4fd9-980d-7071219611a2",
+    "name": "Family Planning Australia",
+    "service_type": "Pregnancy termination",
+    "suburb": "NEWINGTON",
+    "state": "NSW",
+    "postcode": "2127",
+    "latitude": -33.83240312,
+    "longitude": 151.05587784,
+    "phone": "1300 372 372",
+    "email": "",
+    "website": "www.fpnsw.org.au",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "1940d9ae-37a3-4843-a5ae-d3ce9410eb6e",
+    "name": "Family Planning Australia Day Surgery Unit",
+    "service_type": "Pregnancy termination",
+    "suburb": "NEWINGTON",
+    "state": "NSW",
+    "postcode": "2127",
+    "latitude": -33.83240312,
+    "longitude": 151.05587784,
+    "phone": "1300 372 372",
+    "email": "daysurgery@fpnsw.org.au",
+    "website": "https://www.fpnsw.org.au/clinics/day-surgery",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Family Planning Australia Day Surgery Unit is the only surgical abortion provider in Sydney with bulk-billing options available. Procedures offered under IV sedation include surgical abortion to 14 weeks and 6 days, contraceptive procedures (IUD insertion and removal), and vasectomy. STI screening and cervical screening can also be undertaken at the time of procedures. No referral is required.",
+    "search_location": ""
+  },
+  {
+    "id": "6a06038f-b4f5-4f3f-afa9-65a9097e51a9",
+    "name": "MSI Westmead (Sydney West) Abortion & Contraception Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "WESTMEAD",
+    "state": "NSW",
+    "postcode": "2145",
+    "latitude": -33.80772078,
+    "longitude": 150.9878269,
+    "phone": "1300 003 707",
+    "email": "info@msiaustralia.org.au",
+    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-sydney-west-clinic/",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Operating hours subject to change. We kindly request that you make a booking before visiting the clinic. Offers a range of reproductive health services to support the diverse needs of the community. Many MSI day surgeries are eligible for private health claiming. Our patients receive free access to support services, including pre-care assessment, counselling, free aftercare, and interpreters, ensuring you get the best standard of care before, during and after your appointment with us.",
+    "search_location": ""
+  },
+  {
+    "id": "eb037bbc-b6ef-4909-a334-e94ab7ba46b9",
+    "name": "Family Planning Australia - Fairfield Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "FAIRFIELD",
+    "state": "NSW",
+    "postcode": "2165",
+    "latitude": -33.86863327026367,
+    "longitude": 150.95457458496094,
+    "phone": "1300 372 372",
+    "email": "fairfieldappts@fpnsw.org.au",
+    "website": "",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Family Planning Australia clinics offer a range of reproductive and sexual health services including contraception information, contraceptive procedures (IUD and Implanon), pregnancy options including medical and surgical abortion, STI testing and management, advice regarding management of menopause symptoms, and more.",
+    "search_location": ""
+  },
+  {
+    "id": "860a0440-ff6f-4e93-aa5e-72be70fb3af3",
+    "name": "Family Planning NSW Penrith",
+    "service_type": "Pregnancy termination",
+    "suburb": "PENRITH",
+    "state": "NSW",
+    "postcode": "2750",
+    "latitude": -33.756134033203125,
+    "longitude": 150.6939239501953,
+    "phone": "1300 372 372",
+    "email": "penrithappts@fpnsw.org.au",
+    "website": "",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Family Planning Australia clinics offer a range of reproductive and sexual health services including contraception information, contraceptive procedures (IUD and Implanon), pregnancy options including medical and surgical abortion, STI testing and management, advice regarding management of menopause symptoms, and more.",
+    "search_location": ""
+  },
+  {
+    "id": "beb84181-7e55-48ef-b7d7-c3e8d686b971",
+    "name": "Family Planning Australia - Hunter Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "NEWCASTLE",
+    "state": "NSW",
+    "postcode": "2300",
+    "latitude": -32.92658223,
+    "longitude": 151.77368093,
+    "phone": "1300 372 372",
+    "email": "hunterappts@fpnsw.org.au",
+    "website": "www.fpnsw.org.au",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "502824f5-96e2-4711-90eb-d6d7d632f82a",
+    "name": "New Lambton Family Practice",
+    "service_type": "Pregnancy termination",
+    "suburb": "NEW LAMBTON",
+    "state": "NSW",
+    "postcode": "2305",
+    "latitude": -32.92264808,
+    "longitude": 151.7153576,
+    "phone": "02 4952 7677",
+    "email": "reception@newlambtonfp.com.au",
+    "website": "https://www.evgp.com.au/",
+    "hours": {
+      "timezone": "Australia/Sydney",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Provision of Medical Termination for Pregnancy up to 9 weeks of pregnancy\nTelehealth Service Available",
+    "search_location": ""
+  },
+  {
+    "id": "0fb7638c-60bf-4346-9215-4303df027811",
+    "name": "Elmwood Medical Centre",
+    "service_type": "Pregnancy termination",
+    "suburb": "WODONGA",
+    "state": "VIC",
+    "postcode": "3690",
+    "latitude": -36.1366,
+    "longitude": 146.8693,
+    "phone": "0260563011",
+    "email": "admin@elmwoodmedical.com.au",
+    "website": "https://elmwoodmedical.com.au/",
+    "hours": {
+      "timezone": "Australia/Melbourne",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "061ae48c-30bf-44b6-9e8c-3bb7b77de9a5",
+    "name": "MSI Canberra Abortion & Contraception Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "CITY",
+    "state": "ACT",
+    "postcode": "2601",
+    "latitude": -35.27785606,
+    "longitude": 149.12765671,
+    "phone": "1300 003 707",
+    "email": "",
+    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-canberra-clinic/",
+    "hours": {
+      "timezone": "Australia/Canberra",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Operating hours subject to change. We kindly request that you make a booking before visiting the clinic. Offers a range of reproductive health services to support the diverse needs of the community. Many MSI day surgeries are eligible for private health claiming. Our patients receive free access to support services, including pre-care assessment, counselling, free aftercare, and interpreters, ensuring you get the best standard of care before, during and after your appointment with us.",
+    "search_location": ""
+  },
+  {
+    "id": "b9a99261-e552-4bde-bb6b-1fdf0ca48bac",
+    "name": "MSI Richmond",
+    "service_type": "Pregnancy termination",
+    "suburb": "RICHMOND",
+    "state": "VIC",
+    "postcode": "3121",
+    "latitude": -37.81237145,
+    "longitude": 145.0140643,
+    "phone": "1300 003 707",
+    "email": "",
+    "website": "https://www.msiaustralia.org.au/",
+    "hours": {
+      "timezone": "Australia/Melbourne",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "MSI Australia (formerly Marie Stopes) can provide the full range of contraception services and sexually transmitted infection checks. The type of contraception suitable for you will depend on your personal circumstances, such as your age, your way of life, whether or not you have children, your health and the need to avoid pregnancy and STIs. Appointments are required, please call our office on 1300 003 707.",
+    "search_location": ""
+  },
+  {
+    "id": "7e003232-4104-4c8a-a4d6-fa26056de275",
+    "name": "MyHealth Medical Centre - Carlton",
+    "service_type": "Pregnancy termination",
+    "suburb": "CARLTON",
+    "state": "VIC",
+    "postcode": "3053",
+    "latitude": -37.79806137084961,
+    "longitude": 144.9681854248047,
+    "phone": "03 9347 7711",
+    "email": "",
+    "website": "https://myhealth.net.au/carlton",
+    "hours": {
+      "timezone": "Australia/Melbourne",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "66547b30-8da7-40e4-8d14-5455f12aa58f",
+    "name": "MSI St Kilda (Melbourne) Abortion & Contraception Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "ELWOOD",
+    "state": "VIC",
+    "postcode": "3184",
+    "latitude": -37.87324099,
+    "longitude": 144.98180023,
+    "phone": "1300 003 707",
+    "email": "msi.eaststkilda@msiaustralia.org.au",
+    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-melbourne-clinic/",
+    "hours": {
+      "timezone": "Australia/Melbourne",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "We kindly request that you make a booking before visiting the clinic. The MSI St Kilda clinic is dedicated to providing comprehensive reproductive health services to the community. Many MSI day surgeries are eligible for private health claiming. Patients receive free access to support services, including pre-care assessment, counselling, free aftercare, and interpreters, ensuring you get the best standard of care before, during and after your appointment. ",
+    "search_location": ""
+  },
+  {
+    "id": "dcac0ab0-e1d4-415d-94d9-1681e46e79d6",
+    "name": "Supernova Medical Centre",
+    "service_type": "Pregnancy termination",
+    "suburb": "TARNEIT",
+    "state": "VIC",
+    "postcode": "3029",
+    "latitude": -37.84975548,
+    "longitude": 144.70273423,
+    "phone": "0388665544",
+    "email": "contact@supernovamedical.com.au",
+    "website": "https://supernovamedical.com.au/",
+    "hours": {
+      "timezone": "",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "212a7fab-35af-0a35-40ca-2980355f8f95",
+    "name": "MSI Australia",
+    "service_type": "Pregnancy termination",
+    "suburb": "",
+    "state": "",
+    "postcode": "",
+    "latitude": null,
+    "longitude": null,
+    "phone": "1300 003 707",
+    "email": "",
+    "website": "https://www.msiaustralia.org.au/",
+    "hours": {
+      "timezone": "Australia/Adelaide",
+      "weekly_calendar": {}
+    },
+    "is_virtual": true,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "MSI Australia provides free decision-based counselling via telephone, giving you a chance to discuss your situation with a trained pregnancy advice counsellor. Sessions are confidential, non-judgemental and free; we want to help you make the decision that is right for you.",
+    "search_location": ""
+  },
+  {
+    "id": "38a4e022-5fcb-444f-a9f0-a3b0d8ae2237",
+    "name": "Clinic 66 Online",
+    "service_type": "Pregnancy termination",
+    "suburb": "",
+    "state": "",
+    "postcode": "",
+    "latitude": null,
+    "longitude": null,
+    "phone": "",
+    "email": "",
+    "website": "https://www.clinic66online.com.au/",
+    "hours": {
+      "timezone": "Australia/Adelaide",
+      "weekly_calendar": {}
+    },
+    "is_virtual": true,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "We're an online women's health clinic, delivering professional expertise to Australian women via modern, secure & convenient Telehealth. \nBy women for women. \n-No Referral Required \n-Our Professional Women's Health GPs are available for Online Consultations from Monday to Saturday \n-Appointments are necessary but wait times are limited.",
+    "search_location": ""
+  },
+  {
+    "id": "b22479cc-6dc8-4356-85c4-9fab8e7615da",
+    "name": "MSI Australia - Virtual Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "",
+    "state": "",
+    "postcode": "",
+    "latitude": null,
+    "longitude": null,
+    "phone": "1300 003 707",
+    "email": "",
+    "website": "https://www.msiaustralia.org.au/",
+    "hours": {
+      "timezone": "Australia/Melbourne",
+      "weekly_calendar": {}
+    },
+    "is_virtual": true,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "7848de12-d72f-429f-8be0-f525ebdf1e7c",
+    "name": "MSI Gold Coast Abortion & Contraception Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "VARSITY LAKES",
+    "state": "QLD",
+    "postcode": "4227",
+    "latitude": -28.0791405,
+    "longitude": 153.40990582,
+    "phone": "1300 003 707",
+    "email": "",
+    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-gold-coast-clinic/",
+    "hours": {
+      "timezone": "Australia/Brisbane",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "MSI Australia provides local anaesthetic non scalpel vasectomy procedures. Vasectomy is the only permanent method of contraception for men. It is safe, simple and effective and is the recommended family planning method for men who want a permanent solution to their contraceptive needs. For further information or appointments, please call our 24 hour freecall number 1300 336 043.",
+    "search_location": ""
+  },
+  {
+    "id": "89cb7ece-0ec3-422c-8e12-0483ed1e5eec",
+    "name": "Myhealth Benowa Village",
+    "service_type": "Pregnancy termination",
+    "suburb": "BENOWA",
+    "state": "QLD",
+    "postcode": "4217",
+    "latitude": -27.999834060668945,
+    "longitude": 153.37673950195312,
+    "phone": "07 5618 8616",
+    "email": "",
+    "website": "https://myhealth.net.au/benowa-village/",
+    "hours": {
+      "timezone": "Australia/Brisbane",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Walk-ins welcome, subject to triage. \n\nAfter hours arrangement: \nWe now provide After Hours services with our own GPs using the Medinet app. Search for the Medinet icon in your App Store.",
+    "search_location": ""
+  },
+  {
+    "id": "9987039c-8515-4816-b447-0690a4c615f0",
+    "name": "Gynaehealth",
+    "service_type": "Pregnancy termination",
+    "suburb": "SPRINGWOOD",
+    "state": "QLD",
+    "postcode": "4127",
+    "latitude": -27.61745831,
+    "longitude": 153.12613682,
+    "phone": "07 3397 1211",
+    "email": "enquiries@gynaehealth.com.au",
+    "website": "https://www.gynaehealth.com.au",
+    "hours": {
+      "timezone": "Australia/Brisbane",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "756b93ea-944c-4289-910f-907613094ad3",
+    "name": "MSI Brisbane Abortion & Contraception Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "BOWEN HILLS",
+    "state": "QLD",
+    "postcode": "4006",
+    "latitude": -27.44794464111328,
+    "longitude": 153.03717041015625,
+    "phone": "1300 003 707",
+    "email": "BowenHillsCentreTeam@msiaustralia.org.au",
+    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-brisbane-clinic/",
+    "hours": {
+      "timezone": "Australia/Brisbane",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "MSI Australia provides local anaesthetic non scalpel vasectomy procedures. Vasectomy is the only permanent method of contraception for men. It is safe, simple and effective and is the recommended family planning method for men who want a permanent solution to their contraceptive needs. For further information or appointments, please call our 24 hour freecall number 1300 336 043",
+    "search_location": ""
+  },
+  {
+    "id": "f5318dd4-75ef-48e9-80af-d8855b99490c",
+    "name": "Brewer Street Medical Centre",
+    "service_type": "Pregnancy termination",
+    "suburb": "KALLANGUR",
+    "state": "QLD",
+    "postcode": "4503",
+    "latitude": -27.24960313,
+    "longitude": 152.99863818,
+    "phone": "07 3448 0438",
+    "email": "admin@brewerstreetmedical.com.au",
+    "website": "https://brewerstreetmedical.com.au",
+    "hours": {
+      "timezone": "Australia/Brisbane",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "f71a4579-8c70-43bf-b3ef-b49f490d1806",
+    "name": "Central Queensland Family Planning",
+    "service_type": "Pregnancy termination",
+    "suburb": "",
+    "state": "",
+    "postcode": "",
+    "latitude": null,
+    "longitude": null,
+    "phone": "07 3181 4360",
+    "email": "",
+    "website": "https://cqfp.com.au",
+    "hours": {
+      "timezone": "Australia/Brisbane",
+      "weekly_calendar": {}
+    },
+    "is_virtual": true,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Telehealth termination of pregnancy service. \nNon-directive counselling and contraceptive counselling. \nPublic holidays vary",
+    "search_location": ""
+  },
+  {
+    "id": "adadeb19-2b90-405e-8093-cd6c4d57da6f",
+    "name": "Queensland Virtual Early Medical Termination of Pregnancy Service",
+    "service_type": "Pregnancy termination",
+    "suburb": "",
+    "state": "",
+    "postcode": "",
+    "latitude": null,
+    "longitude": null,
+    "phone": "",
+    "email": "",
+    "website": "https://www.qld.gov.au/health/children/pregnancy/termination-of-pregnancy/virtual-early-medical-termination-of-pregnancy-service",
+    "hours": {
+      "timezone": "Australia/Brisbane",
+      "weekly_calendar": {}
+    },
+    "is_virtual": true,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Queensland Virtual Early Medical Termination of Pregnancy Service is suitable if you live in Queensland and are less than 9 weeks pregnant.",
+    "search_location": ""
+  },
+  {
+    "id": "098c0872-7bf7-47ad-8f65-a5835e6610ed",
+    "name": "Hyde Park Medical Centre",
+    "service_type": "Pregnancy termination",
+    "suburb": "HYDE PARK",
+    "state": "QLD",
+    "postcode": "4812",
+    "latitude": -19.277435302734375,
+    "longitude": 146.7977752685547,
+    "phone": "07 4772 6222",
+    "email": "reception@hydeparkmedicalcentre.com.au",
+    "website": "https://hydeparkmedicalcentre.com.au/",
+    "hours": {
+      "timezone": "Australia/Brisbane",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "12b8df52-0190-4296-f330-e8867dfb10df",
+    "name": "Nanyara Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "RIVERVALE",
+    "state": "WA",
+    "postcode": "6103",
+    "latitude": -31.95557403564453,
+    "longitude": 115.91545867919922,
+    "phone": "08 9277 6070",
+    "email": "",
+    "website": "",
+    "hours": {
+      "timezone": "Australia/Perth",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "",
+    "search_location": ""
+  },
+  {
+    "id": "f6ee1077-09f4-4c26-9edf-99e2341a73cc",
+    "name": "MSI Perth Abortion & Contraception Clinic",
+    "service_type": "Pregnancy termination",
+    "suburb": "MIDLAND",
+    "state": "WA",
+    "postcode": "6056",
+    "latitude": -31.892629623413086,
+    "longitude": 116.0105209350586,
+    "phone": "1300 003 707",
+    "email": "",
+    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-perth-clinic/",
+    "hours": {
+      "timezone": "Australia/Perth",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "MSI Australia provides local anaesthetic non scalpel vasectomy procedures. Vasectomy is the only permanent method of contraception for men. It is safe, simple and effective and is the recommended family planning method for men who want a permanent solution to their contraceptive needs. For further information or appointments, please call our 24 hour freecall number 1300 336 043.",
+    "search_location": ""
+  },
+  {
+    "id": "e9b237c4-65ba-9db5-4498-34795e8073af",
+    "name": "Pregnancy Advisory Centre",
+    "service_type": "Pregnancy termination",
+    "suburb": "WOODVILLE PARK",
+    "state": "SA",
+    "postcode": "5011",
+    "latitude": -34.88468142,
+    "longitude": 138.54208576,
+    "phone": "08 7117 8999",
+    "email": "HealthPAC@sa.gov.au",
+    "website": "http://www.sahealth.sa.gov.au/AbortionSupportServices",
+    "hours": {
+      "timezone": "Australia/Adelaide",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "The Pregnancy Advisory Centre is a health service for women and pregnant people requiring an abortion or considering their pregnancy options. Appointments are required, we do not provide a walk in service.\n\nServices are confidential and some services may attract a co-payment, there may be out of pocket costs if you do not have a Medicare card. \n\nIf you have any questions, please contact the Pregnancy Advisory Centre, or see our website for further information available.",
+    "search_location": ""
+  },
+  {
+    "id": "e40324eb-f974-4ad3-aa19-e0ee90461952",
+    "name": "Pandanus Medical NT",
+    "service_type": "Pregnancy termination",
+    "suburb": "MILLNER",
+    "state": "NT",
+    "postcode": "0810",
+    "latitude": -12.39174112,
+    "longitude": 130.85691071,
+    "phone": "0889452488",
+    "email": "reception@pandanusmedicalnt.com.au",
+    "website": "https://www.pandanusmedicalnt.com.au",
+    "hours": {
+      "timezone": "Australia/Darwin",
+      "weekly_calendar": {}
+    },
+    "is_virtual": false,
+    "appointment_required": true,
+    "billing_options": [
+      "yes"
+    ],
+    "facilities": [],
+    "description": "Medical termination of early pregnancy before nine weeks",
+    "search_location": ""
+  }
+]

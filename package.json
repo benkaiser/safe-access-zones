@@ -1,0 +1,24 @@
+{
+  "name": "safe-access-zones",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:data": "node scripts/build-data.mjs",
+    "fetch:buildings": "node scripts/fetch-buildings.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run build:data && npm run typecheck && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@turf/buffer": "^7.2.0",
+    "@turf/helpers": "^7.2.0",
+    "maplibre-gl": "^5.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
+  }
+}

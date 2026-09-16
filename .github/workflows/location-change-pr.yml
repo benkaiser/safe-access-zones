@@ -1,0 +1,82 @@
+name: Create location change pull request
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  create-pull-request:
+    if: startsWith(github.event.issue.title, '[Location change]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate and apply request
+        env:
+          CHANGE_REQUEST_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          ISSUE_CREATED_AT: ${{ github.event.issue.created_at }}
+        run: node scripts/apply-change-request.mjs
+
+      - name: Rebuild map data
+        run: npm run build:data
+
+      - name: Commit change
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          branch="location-change-${ISSUE_NUMBER}-${RUN_ATTEMPT}"
+          git switch -c "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/curation-overrides.json public/data
+          git commit -m "Apply location change from issue #${ISSUE_NUMBER}" \
+            -m "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>" \
+            -m "Copilot-Session: f8dd3c80-428e-4049-a7f3-2fe42d3975ca"
+          git push --set-upstream origin "$branch"
+
+      - name: Open pull request
+        id: pull-request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          pr_url=$(gh pr create \
+            --title "Apply location change from issue #${ISSUE_NUMBER}" \
+            --body "Applies and validates the location change proposed in #${ISSUE_NUMBER}.
+
+          Closes #${ISSUE_NUMBER}" \
+            --base "${{ github.event.repository.default_branch }}" \
+            --head "location-change-${ISSUE_NUMBER}-${{ github.run_attempt }}")
+          echo "url=$pr_url" >> "$GITHUB_OUTPUT"
+
+      - name: Link pull request from issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          PR_URL: ${{ steps.pull-request.outputs.url }}
+        run: gh issue comment "$ISSUE_NUMBER" --body "Validated change and opened $PR_URL for review and merge."
+
+      - name: Report invalid request
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue comment "$ISSUE_NUMBER" --body "The automated location-change validation failed. Review the workflow run for details and update or replace this issue."

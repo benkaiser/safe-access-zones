@@ -1,0 +1,10 @@
+{
+  "publisher": "Healthdirect Australia",
+  "dataset": "National Health Services Directory (NHSD)",
+  "source_url": "https://www.healthdirect.gov.au/australian-health-services",
+  "service_category": "Pregnancy termination",
+  "service_category_id": "310062002",
+  "synced_at": "2026-09-16T00:09:42Z",
+  "source_records": 36,
+  "completed_with_errors": false
+}

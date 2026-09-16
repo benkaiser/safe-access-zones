@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Access Zones – Suggest a Change</title>
+  </head>
+  <body>
+    <div class="admin-shell">
+      <aside class="admin-panel">
+        <header>
+          <p class="eyebrow">Contribute</p>
+          <h1>Suggest a location change</h1>
+          <p class="lede">Prepare an addition or correction for review on GitHub.</p>
+        </header>
+
+        <div class="notice">
+          Submitting opens a pre-filled GitHub issue. Automation validates the
+          request and creates a pull request for review; no map data changes until
+          that pull request is merged.
+        </div>
+
+        <section aria-labelledby="change-type-heading">
+          <h2 id="change-type-heading">What do you want to do?</h2>
+          <div class="editor-choice-actions" role="group" aria-label="Change type">
+            <button
+              id="choose-edit"
+              class="secondary"
+              type="button"
+              aria-pressed="false"
+            >
+              Edit an existing location
+            </button>
+            <button
+              id="choose-add"
+              class="secondary"
+              type="button"
+              aria-pressed="false"
+            >
+              Add a new location
+            </button>
+          </div>
+        </section>
+
+        <section id="edit-location-panel" hidden>
+          <h2>Edit existing location</h2>
+          <label for="facility-select">Facility</label>
+          <select id="facility-select"></select>
+
+          <label for="category-select">Category</label>
+          <select id="category-select">
+            <option value="clinic">Abortion clinic</option>
+            <option value="doctor">Doctor / general practice</option>
+            <option value="hospital">Hospital</option>
+          </select>
+
+          <label class="toggle-row">
+            <input id="removed-checkbox" type="checkbox" />
+            <span>Remove from published map</span>
+          </label>
+
+          <div class="button-row">
+            <button id="draw-boundary" type="button">Draw premises boundary</button>
+            <button id="use-nearest-boundary" class="secondary" type="button">
+              Use nearest OSM candidate
+            </button>
+            <button id="clear-boundary" class="secondary" type="button">Clear manual boundary</button>
+          </div>
+          <div id="triage-summary" class="triage-summary"></div>
+          <p id="draw-help" class="help-text">
+            Select “Draw”, click each corner on the map, then double-click the final point.
+          </p>
+
+          <label for="decision-note">Required decision note</label>
+          <textarea
+            id="decision-note"
+            rows="3"
+            placeholder="Evidence and reason for this change"
+          ></textarea>
+          <button id="save-change" type="button">Continue on GitHub</button>
+        </section>
+
+        <section id="add-location-panel" hidden>
+          <h2>Add a location</h2>
+          <div class="field-grid">
+            <label>Name<input id="add-name" type="text" /></label>
+            <label>Category
+              <select id="add-category">
+                <option value="clinic">Abortion clinic</option>
+                <option value="doctor">Doctor / general practice</option>
+                <option value="hospital">Hospital</option>
+              </select>
+            </label>
+            <label>State<input id="add-state" type="text" maxlength="3" /></label>
+            <label>Suburb<input id="add-suburb" type="text" /></label>
+            <label>Latitude<input id="add-latitude" type="number" step="any" /></label>
+            <label>Longitude<input id="add-longitude" type="number" step="any" /></label>
+          </div>
+          <label for="add-note">Required addition note</label>
+          <textarea id="add-note" rows="2" placeholder="Source and reason for addition"></textarea>
+          <button id="add-location" type="button">Continue on GitHub</button>
+        </section>
+
+        <p id="admin-status" class="help-text" role="status"></p>
+
+        <footer>
+          <a href="./">Return to map</a>
+        </footer>
+      </aside>
+      <main id="admin-map" aria-label="Boundary editing map"></main>
+    </div>
+    <script type="module" src="/src/admin.ts"></script>
+  </body>
+</html>
