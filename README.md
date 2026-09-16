@@ -23,11 +23,6 @@ termination service records:
 - 13 initially classified as doctors or general practices
 - no hospital-classified records in the current export
 
-Classification is an initial name-based rule and can be corrected in the local
-editor. The source file was supplied to the project; confirm the right to
-republish Healthdirect-derived records before public deployment. The intended
-long-term source is an approved NHSD/AURIN export.
-
 `data/source-metadata.json` records the Healthdirect NHSD attribution and the
 time the source was last synced. `scrape_healthdirect.py` updates that record
 only after a scrape completes; ordinary map builds preserve the source sync
