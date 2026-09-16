@@ -175,6 +175,28 @@ h2 {
   padding-top: 1.2rem;
 }
 
+.sidebar .purpose-callout {
+  margin: 1.2rem 0;
+  border: 1px solid #d9c9a4;
+  border-radius: 0.5rem;
+  background: #fffaf0;
+  padding: 1rem;
+}
+
+.purpose-callout h2 {
+  color: #7d2346;
+}
+
+.purpose-callout p {
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.purpose-callout a {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .notice {
   border-left: 4px solid #d69b1a;
   border-radius: 0.25rem;
