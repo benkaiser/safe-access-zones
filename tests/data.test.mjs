@@ -39,7 +39,18 @@ test("detects points inside polygons", () => {
 });
 
 test("flags ACT geometry as indicative", () => {
-  assert.match(stateGeometryNote("ACT"), /indicative only/i);
+  assert.match(stateGeometryNote("ACT"), /Health Act 1993.*s 86/i);
+  assert.match(stateGeometryNote("ACT"), /not the legal declaration/i);
+});
+
+test("describes each jurisdiction's statutory measurement basis", () => {
+  assert.match(stateGeometryNote("NSW"), /pedestrian access point/i);
+  assert.match(stateGeometryNote("QLD"), /150 m from an entrance/i);
+  assert.match(stateGeometryNote("SA"), /public areas within 150 m/i);
+  assert.match(stateGeometryNote("VIC"), /150 m radius of premises/i);
+  assert.match(stateGeometryNote("TAS"), /150 m radius of premises/i);
+  assert.match(stateGeometryNote("WA"), /150 m outside its boundary/i);
+  assert.match(stateGeometryNote("NT"), /150 m outside its boundary/i);
 });
 
 test("measures distance from a point to a polygon edge", () => {

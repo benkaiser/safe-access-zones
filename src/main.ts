@@ -168,7 +168,9 @@ function popupContent(properties: FacilityProperties): HTMLElement {
 
   const note = document.createElement("p");
   note.className = "popup-meta";
-  note.textContent = properties.legal_note;
+  const lawLabel = document.createElement("strong");
+  lawLabel.textContent = "State or territory law: ";
+  note.append(lawLabel, properties.legal_note);
 
   container.append(category, title, location, confidence, note);
 

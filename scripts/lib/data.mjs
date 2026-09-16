@@ -35,14 +35,14 @@ export function isPhysicalService(service) {
 
 export function stateGeometryNote(state) {
   const notes = {
-    ACT: "The ACT uses declared protected areas rather than a general 150 m rule; this geometry is indicative only.",
-    NSW: "Simplified premises-based geometry; NSW pedestrian access points are not included.",
-    QLD: "Simplified premises-based geometry; Queensland zones are ordinarily measured from premises entrances.",
-    SA: "Simplified radius; the South Australian rule applies to qualifying public areas.",
-    VIC: "Indicative 150 m area generated from the best available premises geometry.",
-    TAS: "Indicative 150 m area generated from the best available premises geometry.",
-    WA: "Indicative 150 m area generated from the best available premises geometry.",
-    NT: "Indicative 150 m area generated from the best available premises geometry.",
+    ACT: "Health Act 1993 (ACT) s 86 requires a ministerially declared area that is at least 50 m at every point from the protected facility, sufficient for privacy and access, and no larger than necessary. This map shows a generic 150 m building buffer, not the legal declaration.",
+    NSW: "Public Health Act 2010 (NSW) s 98A covers the clinic premises and every place within 150 m of any part of those premises or a pedestrian access point to the building. This map buffers the mapped building and does not separately model pedestrian access points.",
+    QLD: "Termination of Pregnancy Act 2018 (Qld) s 14 covers the premises and places no more than 150 m from an entrance, unless another distance is prescribed. This map instead buffers the entire mapped building, so its boundary can differ from the legal zone.",
+    SA: "Health Care Act 2008 (SA) s 48B defines the health access zone as the protected premises plus public areas within 150 m. This map shows the full building buffer, including land that may not be a public area.",
+    VIC: "Public Health and Wellbeing Act 2008 (Vic) s 185B defines the safe access zone as the area within a 150 m radius of premises where abortions are provided, excluding pharmacies. This map uses the mapped building as a proxy for the legal premises.",
+    TAS: "Reproductive Health (Access to Terminations) Act 2013 (Tas) s 9 defines the access zone as the area within a 150 m radius of premises where terminations are provided. This map uses the mapped building as a proxy for the legal premises.",
+    WA: "Public Health Act 2016 (WA) s 202O includes the abortion premises and the area within 150 m outside its boundary. This map buffers the mapped building, which may not exactly match the legal premises boundary.",
+    NT: "Termination of Pregnancy Law Reform Act 2017 (NT) s 4 includes the premises for terminations and the area within 150 m outside its boundary. This map buffers the mapped building, which may not exactly match the legal premises boundary.",
   };
   return notes[state] ?? "Indicative geometry generated from the best available location.";
 }
