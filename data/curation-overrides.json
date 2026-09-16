@@ -313,8 +313,11 @@
         ]
       },
       "triage_status": "manual-boundary",
-      "note": "Matches imagery on gmaps",
-      "reviewed_at": "2026-09-16T04:16:45.191Z"
+      "note": "Automated workflow smoke test; this pull request will not be merged.",
+      "reviewed_at": "2026-09-16T04:55:56Z",
+      "category": "clinic",
+      "removed": false,
+      "source_issue_url": "https://github.com/benkaiser/safe-access-zones/issues/1"
     },
     "1940d9ae-37a3-4843-a5ae-d3ce9410eb6e": {
       "boundary": {
