@@ -3,7 +3,9 @@
 A static MapLibre map of indicative safe-access areas around physical
 pregnancy-termination services in Australia. It is designed for GitHub Pages and
 includes a local editor for reviewing classifications, removals and premises
-boundaries.
+boundaries. Locations come from Healthdirect National Health Services Directory
+(NHSD) records explicitly listed under the `Pregnancy termination` service
+category.
 
 The map is a planning and research aid, not legal advice. Safe-access-zone
 definitions differ between Australian jurisdictions. In particular, the ACT
@@ -110,8 +112,9 @@ npm run preview          # preview dist/
 ## Attribution
 
 Location data is attributed to Healthdirect Australia's National Health
-Services Directory (NHSD), with the last source sync date displayed in the
-public map footer and retained on each generated feature.
+Services Directory (NHSD) and is limited to records explicitly listed under
+the `Pregnancy termination` service category. The last source sync date is
+displayed in the public map footer and retained on each generated feature.
 
 Building geometry and the OpenFreeMap basemap contain OpenStreetMap data:
 `© OpenStreetMap contributors`, available under the
