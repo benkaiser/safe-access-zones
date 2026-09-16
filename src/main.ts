@@ -172,33 +172,6 @@ function popupContent(properties: FacilityProperties): HTMLElement {
 
   container.append(category, title, location, confidence, note);
 
-  if (properties.phone) {
-    const phone = document.createElement("a");
-    phone.href = `tel:${properties.phone.replace(/[^\d+]/g, "")}`;
-    phone.textContent = properties.phone;
-    container.append(phone);
-  }
-  if (properties.website) {
-    const separator = document.createTextNode(properties.phone ? " · " : "");
-    const website = document.createElement("a");
-    website.href = properties.website;
-    website.target = "_blank";
-    website.rel = "noreferrer";
-    website.textContent = "Provider website";
-    container.append(separator, website);
-  }
-  if (properties.osm_url) {
-    const paragraph = document.createElement("p");
-    paragraph.className = "popup-meta";
-    const osmLink = document.createElement("a");
-    osmLink.href = properties.osm_url;
-    osmLink.target = "_blank";
-    osmLink.rel = "noreferrer";
-    osmLink.textContent = "View matched building on OpenStreetMap";
-    paragraph.append(osmLink);
-    container.append(paragraph);
-  }
-
   return container;
 }
 

@@ -91,9 +91,9 @@ only enabled categories. Empty categories are omitted from the controls, and
 polygon layers use equivalent MapLibre filters. Zone, building and uncertainty
 layers are always enabled because they are the map's primary output.
 
-The application provides keyboard-accessible category controls, explicit
-confidence descriptions and provider/OSM links. On mobile the map occupies the
-first 72% of the viewport and precedes the explanatory controls.
+The application provides keyboard-accessible category controls and explicit
+confidence descriptions. On mobile the map occupies the first 72% of the
+viewport and precedes the explanatory controls.
 
 ## Curation model
 
