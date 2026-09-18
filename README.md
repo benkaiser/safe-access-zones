@@ -5,8 +5,7 @@ pregnancy-termination services in Australia. It is designed for GitHub Pages and
 includes a local editor for reviewing classifications, removals and premises
 boundaries. Locations combine Healthdirect National Health Services Directory (NHSD)
 records explicitly listed under the `Pregnancy termination` service category
-with permission-cleared facility records whose providers requested no public
-source attribution.
+with additional locations publicly listed as providing medical abortion services.
 
 The map is a planning and research aid, not legal advice. Safe-access-zone
 definitions differ between Australian jurisdictions. In particular, the ACT
