@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Molonglo Valley Medical Centre",
+    "state": "ACT",
+    "latitude": -35.3193909,
+    "longitude": 149.0402753
+  },
+  {
+    "name": "Conder Surgery",
+    "state": "ACT",
+    "latitude": -35.4575487,
+    "longitude": 149.0925227
+  },
+  {
+    "name": "Sexual Health and Family Planning ACT (SHFPACT)",
+    "state": "ACT",
+    "latitude": -35.2802691,
+    "longitude": 149.1261329
+  },
+  {
+    "name": "MSI Australia",
+    "state": "ACT",
+    "latitude": -35.27785606,
+    "longitude": 149.12765671
+  },
+  {
+    "name": "The Surgery in Manuka Terrace",
+    "state": "ACT",
+    "latitude": -35.3209928,
+    "longitude": 149.1341259
+  },
+  {
+    "name": "Family Planning NT — Coconut Grove clinic",
+    "state": "NT",
+    "latitude": -12.4005664,
+    "longitude": 130.8522604
+  },
+  {
+    "name": "Family Planning NT — Palmerston clinic",
+    "state": "NT",
+    "latitude": -12.4792868,
+    "longitude": 130.9902212
+  },
+  {
+    "name": "Pregnancy Advisory Centre (Woodville)",
+    "state": "SA",
+    "latitude": -34.88468142,
+    "longitude": 138.54208576
+  },
+  {
+    "name": "Bridge Clinic General Practice (Murray Bridge)",
+    "state": "SA",
+    "latitude": -35.1217053,
+    "longitude": 139.2727103
+  },
+  {
+    "name": "Riverland General Hospital (Berri)",
+    "state": "SA",
+    "latitude": -34.2762778,
+    "longitude": 140.6015322
+  },
+  {
+    "name": "Wallaroo Community Hospital (Kadina)",
+    "state": "SA",
+    "latitude": -33.9273627,
+    "longitude": 137.6364886
+  }
+]

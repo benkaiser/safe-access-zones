@@ -1,5 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
+import { readServiceSources } from "./lib/services.mjs";
 
 const CATEGORIES = new Set(["clinic", "doctor", "hospital"]);
 const MARKER_PATTERN =
@@ -191,16 +192,14 @@ async function main() {
   }
 
   const root = new URL("../", import.meta.url);
-  const [overrides, services] = await Promise.all([
+  const [overrides, serviceSources] = await Promise.all([
     readFile(new URL("data/curation-overrides.json", root), "utf8").then(JSON.parse),
-    readFile(new URL("pregnancy_termination_services.json", root), "utf8").then(
-      JSON.parse,
-    ),
+    readServiceSources(root),
   ]);
   const request = decodeChangeRequest(issueBody);
   const updated = applyChangeRequest({
     overrides,
-    services,
+    services: [...serviceSources.healthdirect, ...serviceSources.supplemental],
     request,
     issueNumber,
     issueUrl,

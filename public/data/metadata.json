@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T05:07:54.325Z",
+  "generated_at": "2026-09-18T09:53:51.692Z",
   "source": {
     "publisher": "Healthdirect Australia",
     "dataset": "National Health Services Directory (NHSD)",
@@ -7,14 +7,15 @@
     "synced_at": "2026-09-16T00:09:42Z"
   },
   "source_records": 36,
-  "physical_source_records": 31,
+  "supplemental_records": 436,
+  "physical_source_records": 467,
   "excluded_virtual_records": 5,
-  "published_locations": 31,
-  "matched_buildings": 31,
-  "approximate_locations": 0,
+  "published_locations": 467,
+  "matched_buildings": 288,
+  "approximate_locations": 179,
   "categories": {
-    "clinic": 18,
-    "doctor": 13,
-    "hospital": 0
+    "clinic": 77,
+    "doctor": 366,
+    "hospital": 24
   }
 }

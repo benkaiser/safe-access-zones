@@ -8,7 +8,6 @@ import { rasterMapStyle } from "./map-style";
 import type {
   CurationDecision,
   CurationOverrides,
-  FacilityCollection,
 } from "./types";
 
 interface BuildingCandidate {
@@ -52,7 +51,6 @@ const reasonLabels: Record<string, string> = {
 };
 
 let overrides: CurationOverrides = { version: 1, locations: {}, additions: [] };
-let facilities: FacilityCollection = { type: "FeatureCollection", features: [] };
 let queue: TriageItem[] = [];
 let selectedId = triageItems[0]?.service_id ?? "";
 let selectedCandidateIndex = 0;
@@ -75,7 +73,6 @@ const nameElement = requiredElement<HTMLElement>("triage-name");
 const placeElement = requiredElement<HTMLElement>("triage-place");
 const reasonElement = requiredElement<HTMLElement>("triage-reason");
 const positionElement = requiredElement<HTMLElement>("triage-position");
-const providerLinksElement = requiredElement<HTMLElement>("triage-provider-links");
 const candidateListElement = requiredElement<HTMLElement>("candidate-list");
 const noteElement = requiredElement<HTMLTextAreaElement>("triage-note");
 const pendingElement = requiredElement<HTMLElement>("pending-decision");
@@ -328,19 +325,6 @@ function renderCurrentItem(): void {
   reasonElement.textContent =
     reasonLabels[item.triage_reason] ?? item.triage_reason.replaceAll("-", " ");
 
-  const facility = facilities.features.find(
-    (feature) => feature.properties.id === item.service_id,
-  );
-  providerLinksElement.replaceChildren();
-  if (facility?.properties.website) {
-    const providerLink = document.createElement("a");
-    providerLink.href = facility.properties.website;
-    providerLink.target = "_blank";
-    providerLink.rel = "noreferrer";
-    providerLink.textContent = "Provider website";
-    providerLinksElement.append(providerLink);
-  }
-
   const decision = currentDecision();
   noteElement.value = decision?.note ?? "";
   pendingDecision = decision?.triage_status
@@ -425,7 +409,7 @@ function renderCandidates(item: TriageItem): void {
   });
 }
 
-function updateMapSelection(): void {
+function updateMapSelection(fitMap = true): void {
   const item = currentItem();
   const pointSource = map.getSource("triage-current-point") as
     | GeoJSONSource
@@ -469,7 +453,7 @@ function updateMapSelection(): void {
   });
   draftSource.setData(draftFeatureCollection());
 
-  if (!item) {
+  if (!item || !fitMap) {
     return;
   }
   const coordinates: [number, number][] = [[item.longitude, item.latitude]];
@@ -652,7 +636,7 @@ map.on("click", (event) => {
     return;
   }
   draftCoordinates.push([event.lngLat.lng, event.lngLat.lat]);
-  updateMapSelection();
+  updateMapSelection(false);
 });
 
 map.on("dblclick", (event) => {
@@ -807,11 +791,6 @@ async function loadTriageTool(): Promise<void> {
   const repositoryOverrides = await loadRepositoryOverrides();
   const migration = await migrateLegacyBrowserOverrides(repositoryOverrides);
   overrides = migration.document;
-  const response = await fetch("./data/locations.geojson");
-  if (!response.ok) {
-    throw new Error("Run npm run build:data before opening footprint triage.");
-  }
-  facilities = (await response.json()) as FacilityCollection;
 
   map.addSource("triage-current-point", {
     type: "geojson",

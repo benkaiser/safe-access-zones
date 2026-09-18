@@ -147,6 +147,47 @@ Future jurisdiction modules can replace this simplification with NSW access
 points, Queensland entrances, South Australian public-area intersections and
 ACT declared polygons without changing the map data contract.
 
+## Candidate source staging
+
+External state directories are normalized privately before a source-neutral
+publication artifact enters the public data pipeline:
+
+```text
+data/source-requests/{SCHEMA.json,sources.json,...}
+                 │
+                 ▼
+ scripts/collect-provider-sources.mjs or reviewed state PROMPT.txt
+                 │
+                 ▼
+ data/source-staging/<state>/providers.json  (git-ignored)
+                 │
+                 ▼
+ scripts/build-supplemental-locations.mjs
+                 │
+                 ▼
+ data/supplemental-locations.json
+```
+
+Machine-readable collection retains only physical facilities explicitly
+flagged for medical or surgical abortion. Normalization drops source contact
+details and notes, named clinicians, pharmacies, virtual-only and referral-only
+records, and unrelated services. Prose extraction follows the same schema and
+must retain a short source evidence statement for each record. The validator
+checks identifiers, state codes, coordinates, facility status, evidence and
+excluded contact patterns.
+
+No staging file is read by `scripts/build-data.mjs`. The supplemental builder
+requires private permission status, applies coordinate overrides, removes
+source identity and evidence, excludes contact fields and named practitioners,
+and deduplicates against Healthdirect before deduplicating same-premises
+supplemental records. Only the resulting source-neutral file is public.
+
+`scripts/fetch-buildings.mjs` preserves existing automatic and reviewed
+footprints, batches only unresolved combined-service points through Overpass,
+and writes the remaining queue for local triage. Supplemental records never
+receive Healthdirect attribution; Healthdirect provenance remains attached only
+to the original source features.
+
 ## Deployment
 
 `npm run build` regenerates public data, checks TypeScript and creates `dist/`.

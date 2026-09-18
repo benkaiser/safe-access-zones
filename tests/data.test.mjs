@@ -2,7 +2,6 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   classifyFacility,
-  normalizeWebsite,
   pointInPolygon,
   pointToRingDistanceMeters,
   stateGeometryNote,
@@ -13,12 +12,6 @@ test("classifies specialist clinics before general practices", () => {
   assert.equal(classifyFacility("Family Planning Australia"), "clinic");
   assert.equal(classifyFacility("Royal Women's Hospital"), "hospital");
   assert.equal(classifyFacility("Bondi Doctors"), "doctor");
-});
-
-test("normalizes websites without corrupting absolute URLs", () => {
-  assert.equal(normalizeWebsite("www.fpnsw.org.au"), "https://www.fpnsw.org.au");
-  assert.equal(normalizeWebsite("https://example.org"), "https://example.org");
-  assert.equal(normalizeWebsite(""), "");
 });
 
 test("detects points inside polygons", () => {

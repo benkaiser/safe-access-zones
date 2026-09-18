@@ -1,0 +1,179 @@
+{
+  "generated_at": "2026-09-16T06:28:21.795Z",
+  "input_records": 466,
+  "suppressed_healthdirect": 19,
+  "suppressed_supplemental_duplicate": 7,
+  "missing_coordinates": 0,
+  "excluded_individual_clinicians": 4,
+  "published_records": 436,
+  "by_state": {
+    "ACT": 5,
+    "NSW": 57,
+    "NT": 2,
+    "QLD": 159,
+    "SA": 8,
+    "TAS": 42,
+    "VIC": 107,
+    "WA": 56
+  },
+  "healthdirect_matches": [
+    {
+      "candidate_name": "MSI Australia",
+      "trusted_name": "MSI Canberra Abortion & Contraception Clinic",
+      "state": "ACT",
+      "distance_m": 0
+    },
+    {
+      "candidate_name": "Contraceptive Services-Macquarie Steet Clinic",
+      "trusted_name": "Macquarie Street Clinic",
+      "state": "NSW",
+      "distance_m": 7
+    },
+    {
+      "candidate_name": "Family Planning Australia- Newington",
+      "trusted_name": "Family Planning Australia",
+      "state": "NSW",
+      "distance_m": 17
+    },
+    {
+      "candidate_name": "MSI Westmead: Abortion, Contraception & Vasectomy Clinic",
+      "trusted_name": "MSI Westmead (Sydney West) Abortion & Contraception Clinic",
+      "state": "NSW",
+      "distance_m": 2
+    },
+    {
+      "candidate_name": "The Private Clinic",
+      "trusted_name": "The Private Clinic",
+      "state": "NSW",
+      "distance_m": 7
+    },
+    {
+      "candidate_name": "GynaeHealth Specialised Care",
+      "trusted_name": "Gynaehealth",
+      "state": "QLD",
+      "distance_m": 26
+    },
+    {
+      "candidate_name": "MSI Bowen Hills",
+      "trusted_name": "MSI Brisbane Abortion & Contraception Clinic",
+      "state": "QLD",
+      "distance_m": 2
+    },
+    {
+      "candidate_name": "MSI Perth",
+      "trusted_name": "MSI Perth Abortion & Contraception Clinic",
+      "state": "WA",
+      "distance_m": 2
+    },
+    {
+      "candidate_name": "Nanyara Medical Group",
+      "trusted_name": "Nanyara Clinic",
+      "state": "WA",
+      "distance_m": 0
+    },
+    {
+      "candidate_name": "Family Planning Australia - Newington day surgery",
+      "trusted_name": "Family Planning Australia",
+      "state": "NSW",
+      "distance_m": 12
+    },
+    {
+      "candidate_name": "Bondi Doctors",
+      "trusted_name": "Bondi Doctors",
+      "state": "NSW",
+      "distance_m": 6
+    },
+    {
+      "candidate_name": "Double Bay Doctors",
+      "trusted_name": "Double Bay Doctors",
+      "state": "NSW",
+      "distance_m": 29
+    },
+    {
+      "candidate_name": "Family Planning Australia - Fairfield",
+      "trusted_name": "Family Planning Australia - Fairfield Clinic",
+      "state": "NSW",
+      "distance_m": 0
+    },
+    {
+      "candidate_name": "Family Planning Australia - Newcastle",
+      "trusted_name": "Family Planning Australia - Hunter Clinic",
+      "state": "NSW",
+      "distance_m": 8
+    },
+    {
+      "candidate_name": "Family Planning Australia - Penrith",
+      "trusted_name": "Family Planning NSW Penrith",
+      "state": "NSW",
+      "distance_m": 14
+    },
+    {
+      "candidate_name": "Rhodes Family Practice",
+      "trusted_name": "Rhodes Family Practice",
+      "state": "NSW",
+      "distance_m": 10
+    },
+    {
+      "candidate_name": "My Health Benowa Village",
+      "trusted_name": "Myhealth Benowa Village",
+      "state": "QLD",
+      "distance_m": 23
+    },
+    {
+      "candidate_name": "MyHealth Medical Centre - Carlton",
+      "trusted_name": "MyHealth Medical Centre - Carlton",
+      "state": "VIC",
+      "distance_m": 7
+    },
+    {
+      "candidate_name": "Pregnancy Advisory Centre (Woodville)",
+      "trusted_name": "Pregnancy Advisory Centre",
+      "state": "SA",
+      "distance_m": 0
+    }
+  ],
+  "supplemental_duplicates": [
+    {
+      "discarded_name": "WNSWLHD - Pregnancy Options Care and Support Team",
+      "kept_name": "WNSWLHD - Pregnancy Options Care and Support Team",
+      "state": "NSW",
+      "distance_m": 5
+    },
+    {
+      "discarded_name": "Top Health Doctors Dutton Park",
+      "kept_name": "South City Doctors",
+      "state": "QLD",
+      "distance_m": 0
+    },
+    {
+      "discarded_name": "Torres and Cape Health Service",
+      "kept_name": "Thursday Island Community Wellness Centre",
+      "state": "QLD",
+      "distance_m": 0
+    },
+    {
+      "discarded_name": "Abortion online - Clinic 66",
+      "kept_name": "Clinic 66",
+      "state": "NSW",
+      "distance_m": 5
+    },
+    {
+      "discarded_name": "Illawarra Family Medical Centre",
+      "kept_name": "Illawarra Family Medical Centre",
+      "state": "NSW",
+      "distance_m": 7
+    },
+    {
+      "discarded_name": "Russell Street Medical Centre",
+      "kept_name": "Russell Street Medical Centre",
+      "state": "NSW",
+      "distance_m": 7
+    },
+    {
+      "discarded_name": "The Leichhardt General Practice",
+      "kept_name": "The Inner West Women's health Clinic",
+      "state": "NSW",
+      "distance_m": 7
+    }
+  ]
+}

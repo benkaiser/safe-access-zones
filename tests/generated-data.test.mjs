@@ -11,7 +11,7 @@ async function readGenerated(name) {
 test("publishes one zone per physical location", async () => {
   const locations = await readGenerated("locations.geojson");
   const zones = await readGenerated("zones.geojson");
-  assert.equal(locations.features.length, 31);
+  assert.ok(locations.features.length > 31);
   assert.equal(zones.features.length, locations.features.length);
 });
 
@@ -21,15 +21,24 @@ test("excludes virtual services and identifies every geometry basis", async () =
     assert.equal(location.geometry.type, "Point");
     assert.ok(["manual", "openstreetmap", "point"].includes(location.properties.geometry_source));
     assert.ok(location.properties.legal_note);
-    assert.equal(
-      location.properties.data_source,
-      "Healthdirect National Health Services Directory (NHSD)",
-    );
-    assert.equal(
-      location.properties.data_source_url,
-      "https://www.healthdirect.gov.au/australian-health-services",
-    );
-    assert.ok(Number.isFinite(Date.parse(location.properties.source_synced_at)));
+    assert.equal("phone" in location.properties, false);
+    assert.equal("email" in location.properties, false);
+    assert.equal("website" in location.properties, false);
+    if (!location.properties.id.startsWith("supplemental-")) {
+      assert.equal(
+        location.properties.data_source,
+        "Healthdirect National Health Services Directory (NHSD)",
+      );
+      assert.equal(
+        location.properties.data_source_url,
+        "https://www.healthdirect.gov.au/australian-health-services",
+      );
+      assert.ok(Number.isFinite(Date.parse(location.properties.source_synced_at)));
+    } else {
+      assert.equal("data_source" in location.properties, false);
+      assert.equal("data_source_url" in location.properties, false);
+      assert.equal("source_synced_at" in location.properties, false);
+    }
   }
 });
 

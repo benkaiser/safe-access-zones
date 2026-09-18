@@ -18,13 +18,6 @@ export function classifyFacility(name) {
   return "doctor";
 }
 
-export function normalizeWebsite(value) {
-  if (!value) {
-    return "";
-  }
-  return /^https?:\/\//i.test(value) ? value : `https://${value}`;
-}
-
 export function isPhysicalService(service) {
   return (
     !service.is_virtual &&

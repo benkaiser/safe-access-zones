@@ -3,9 +3,10 @@
 A static MapLibre map of indicative safe-access areas around physical
 pregnancy-termination services in Australia. It is designed for GitHub Pages and
 includes a local editor for reviewing classifications, removals and premises
-boundaries. Locations come from Healthdirect National Health Services Directory
-(NHSD) records explicitly listed under the `Pregnancy termination` service
-category.
+boundaries. Locations combine Healthdirect National Health Services Directory (NHSD)
+records explicitly listed under the `Pregnancy termination` service category
+with permission-cleared facility records whose providers requested no public
+source attribution.
 
 The map is a planning and research aid, not legal advice. Safe-access-zone
 definitions differ between Australian jurisdictions. In particular, the ACT
@@ -16,19 +17,24 @@ does not model those walkway, entrance or public-area details.
 
 ## Current dataset
 
-`pregnancy_termination_services.json` contains 36 Healthdirect pregnancy
-termination service records:
+The generated map contains 467 physical service locations:
 
-- 31 physical services displayed on the map
+- 31 physical Healthdirect services
+- 436 deduplicated supplemental facilities
 - 5 virtual or telephone services excluded from location-based zones
-- 18 records initially classified as clinics
-- 13 initially classified as doctors or general practices
-- no hospital-classified records in the current export
+- 77 clinics, 366 doctors or general practices, and 24 hospitals
 
 `data/source-metadata.json` records the Healthdirect NHSD attribution and the
 time the source was last synced. `scrape_healthdirect.py` updates that record
 only after a scrape completes; ordinary map builds preserve the source sync
 date and record a separate build timestamp.
+
+Permission and raw-source records remain under the git-ignored
+`data/source-requests/` and `data/source-staging/` directories. The tracked
+`data/supplemental-locations.json` contains only stable internal IDs, facility
+names, locality, coordinates and operational map fields. It contains no source
+identity, evidence excerpts, provider phone numbers, email addresses or
+websites.
 
 ## Run locally
 
@@ -55,8 +61,10 @@ npm run fetch:buildings
 npm run build:data
 ```
 
-The current snapshot has a footprint for all 31 physical services: 18 initial
-automatic matches and 13 reviewed triage decisions. Automatic matches are
+The original Healthdirect snapshot has a footprint for all 31 physical
+services: 18 initial automatic matches and 13 reviewed triage decisions. New
+supplemental locations are matched incrementally and unresolved points enter
+the local triage queue. Automatic matches are
 stored in `data/osm/building-boundaries.json` with their OSM identifiers and
 attribution. A nearby named shopping-centre footprint can also be accepted when
 its place name matches the service name, supporting confirmed tenancies without
@@ -101,7 +109,13 @@ Vite development server and is not included in the GitHub Pages build.
 
 ```bash
 npm run dev              # public map and local editor
+npm run build:supplemental
 npm run fetch:buildings  # refresh best-effort OSM footprint matches
+npm run collect:sources -- wa --permission-confirmed
+npm run collect:sources -- qld --permission-confirmed
+npm run collect:sources -- vic --permission-confirmed
+npm run extract:searchplus -- /path/to/index.html --permission-confirmed
+npm run validate:sources # validate private staged source records
 npm run build:data       # regenerate static GeoJSON
 npm test                 # data transformation tests
 npm run typecheck        # TypeScript checks
@@ -111,10 +125,12 @@ npm run preview          # preview dist/
 
 ## Attribution
 
-Location data is attributed to Healthdirect Australia's National Health
-Services Directory (NHSD) and is limited to records explicitly listed under
-the `Pregnancy termination` service category. The last source sync date is
-displayed in the public map footer and retained on each generated feature.
+Healthdirect records are attributed to Healthdirect Australia's National Health
+Services Directory (NHSD) and are limited to records explicitly listed under
+the `Pregnancy termination` service category. Additional facility records are
+used with permission and carry no public source attribution as required by
+their permission terms. The Healthdirect sync date is displayed in the public
+map footer and retained only on Healthdirect-derived features.
 
 Building geometry and the OpenFreeMap basemap contain OpenStreetMap data:
 `© OpenStreetMap contributors`, available under the
@@ -129,3 +145,15 @@ viewed by a user and relies on normal browser caching, as required by the
 higher-traffic deployment should have a planned PMTiles or contracted
 tile-hosting path rather than relying indefinitely on a best-effort community
 endpoint.
+
+## Broader source permissions
+
+Permission correspondence and source identities are retained privately and are
+not part of the deployable website. Every supplemental source has written
+permission for publication under the no-attribution condition recorded by the
+maintainer.
+
+The publication pipeline excludes named clinicians, provider phone numbers,
+email addresses and websites, pharmacies, pathology and imaging services,
+virtual-only services, referral-only services, and records with no explicit
+abortion provision. Healthdirect always wins cross-source deduplication.

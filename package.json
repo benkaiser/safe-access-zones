@@ -6,6 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build:data": "node scripts/build-data.mjs",
+    "build:supplemental": "node scripts/build-supplemental-locations.mjs",
+    "collect:sources": "node scripts/collect-provider-sources.mjs",
+    "extract:searchplus": "node scripts/extract-searchplus-html.mjs",
+    "geocode:sources": "node scripts/geocode-staged-locations.mjs",
+    "validate:sources": "node scripts/validate-provider-sources.mjs",
     "fetch:buildings": "node scripts/fetch-buildings.mjs",
     "test": "node --test tests/*.test.mjs",
     "typecheck": "tsc --noEmit",

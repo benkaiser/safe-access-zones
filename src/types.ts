@@ -8,8 +8,6 @@ export interface FacilityProperties {
   suburb: string;
   state: string;
   postcode: string;
-  phone: string;
-  website: string;
   appointment_required: boolean;
   geometry_source: "manual" | "openstreetmap" | "point";
   boundary_status: "manual" | "matched" | "unmatched";
@@ -17,9 +15,9 @@ export interface FacilityProperties {
   zone_confidence: "reviewed" | "building-match" | "approximate";
   legal_note: string;
   osm_url?: string;
-  data_source: string;
-  data_source_url: string;
-  source_synced_at: string;
+  data_source?: string;
+  data_source_url?: string;
+  source_synced_at?: string;
 }
 
 export interface GeoJsonFeature<

@@ -5,9 +5,12 @@ import {
   CATEGORY_LABELS,
   classifyFacility,
   isPhysicalService,
-  normalizeWebsite,
   stateGeometryNote,
 } from "./lib/data.mjs";
+import {
+  makeAdditionService,
+  readServiceSources,
+} from "./lib/services.mjs";
 
 const root = new URL("../", import.meta.url);
 
@@ -22,28 +25,7 @@ async function readJson(relativePath, fallback) {
   }
 }
 
-function makeAdditionService(addition) {
-  return {
-    id: addition.id,
-    name: addition.name,
-    service_type: "Pregnancy termination",
-    suburb: addition.suburb,
-    state: addition.state.toUpperCase(),
-    postcode: "",
-    latitude: addition.latitude,
-    longitude: addition.longitude,
-    phone: "",
-    website: "",
-    appointment_required: false,
-    is_virtual: false,
-    manual_category: addition.category,
-    manual_note: addition.note,
-    manual_source: true,
-    source_synced_at: addition.added_at,
-  };
-}
-
-const services = await readJson("pregnancy_termination_services.json", []);
+const { healthdirect, supplemental } = await readServiceSources(root);
 const sourceMetadata = await readJson("data/source-metadata.json", null);
 const buildingMatches = await readJson("data/osm/building-boundaries.json", []);
 const overrides = await readJson("data/curation-overrides.json", {
@@ -52,9 +34,6 @@ const overrides = await readJson("data/curation-overrides.json", {
   additions: [],
 });
 
-if (!Array.isArray(services)) {
-  throw new Error("pregnancy_termination_services.json must contain an array");
-}
 if (
   !sourceMetadata ||
   typeof sourceMetadata.publisher !== "string" ||
@@ -72,7 +51,14 @@ if (overrides.version !== 1) {
 const buildingsByService = new Map(
   buildingMatches.map((building) => [building.service_id, building]),
 );
-const allServices = [...services, ...overrides.additions.map(makeAdditionService)];
+const allServices = [
+  ...healthdirect,
+  ...supplemental,
+  ...overrides.additions.map((addition) => ({
+    ...makeAdditionService(addition),
+    manual_category: addition.category,
+  })),
+];
 const locations = [];
 const zones = [];
 const uncertaintyZones = [];
@@ -139,8 +125,6 @@ for (const service of allServices) {
     suburb: service.suburb || "",
     state: service.state || "",
     postcode: String(service.postcode || ""),
-    phone: service.phone || "",
-    website: normalizeWebsite(service.website),
     appointment_required: Boolean(service.appointment_required),
     geometry_source: geometrySource,
     boundary_status: boundaryStatus,
@@ -148,13 +132,13 @@ for (const service of allServices) {
     zone_confidence: zoneConfidence,
     legal_note: stateGeometryNote(service.state),
     osm_url: override?.selected_osm_url || automaticBuilding?.osm_url || "",
-    data_source: service.manual_source
-      ? "Manual curation"
-      : "Healthdirect National Health Services Directory (NHSD)",
-    data_source_url: service.manual_source ? "" : sourceMetadata.source_url,
-    source_synced_at: service.manual_source
-      ? service.source_synced_at
-      : sourceMetadata.synced_at,
+    ...(service.record_origin === "healthdirect"
+      ? {
+          data_source: "Healthdirect National Health Services Directory (NHSD)",
+          data_source_url: sourceMetadata.source_url,
+          source_synced_at: sourceMetadata.synced_at,
+        }
+      : {}),
   };
 
   const servicePoint = point([service.longitude, service.latitude], properties, {
@@ -226,9 +210,10 @@ const metadata = {
     source_url: sourceMetadata.source_url,
     synced_at: sourceMetadata.synced_at,
   },
-  source_records: services.length,
-  physical_source_records: services.filter(isPhysicalService).length,
-  excluded_virtual_records: services.filter((service) => service.is_virtual).length,
+  source_records: healthdirect.length,
+  supplemental_records: supplemental.length,
+  physical_source_records: allServices.filter(isPhysicalService).length,
+  excluded_virtual_records: healthdirect.filter((service) => service.is_virtual).length,
   published_locations: locations.length,
   matched_buildings: locations.filter(
     (location) => location.properties.boundary_status !== "unmatched",

@@ -8,9 +8,6 @@
     "postcode": "2000",
     "latitude": -33.8671875,
     "longitude": 151.21202087402344,
-    "phone": "02 9221 1933",
-    "email": "",
-    "website": "https://www.contraceptiveservices.com",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -33,9 +30,6 @@
     "postcode": "2000",
     "latitude": -33.86699163,
     "longitude": 151.21205948,
-    "phone": "1300 003 707",
-    "email": "info@msiaustralia.org.au",
-    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-sydney-cbd-clinic/",
     "hours": {
       "timezone": "",
       "weekly_calendar": {}
@@ -58,9 +52,6 @@
     "postcode": "2010",
     "latitude": -33.886745,
     "longitude": 151.209259,
-    "phone": "02 9690 0000",
-    "email": "reception@privateclinic.com.au",
-    "website": "https://www.privateclinic.com.au/",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -83,9 +74,6 @@
     "postcode": "2028",
     "latitude": -33.87691879272461,
     "longitude": 151.2448272705078,
-    "phone": "02 9328 3100",
-    "email": "",
-    "website": "",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -108,9 +96,6 @@
     "postcode": "2026",
     "latitude": -33.88889856,
     "longitude": 151.26998404,
-    "phone": "02 9365 2833",
-    "email": "",
-    "website": "http://www.bondidoctors.com/",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -133,9 +118,6 @@
     "postcode": "2194",
     "latitude": -33.91333636,
     "longitude": 151.10374929,
-    "phone": "02 9193 7850",
-    "email": "info@skmedicalcentre.com.au",
-    "website": "https://www.skmedicalcentre.com.au/",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -158,9 +140,6 @@
     "postcode": "2138",
     "latitude": -33.82751141,
     "longitude": 151.08713162,
-    "phone": "0297431760",
-    "email": "reception.rfp@gmail.com",
-    "website": "https://www.rhodesfamilypractice.com.au/",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -183,9 +162,6 @@
     "postcode": "2141",
     "latitude": -33.85065740135285,
     "longitude": 151.06139035268686,
-    "phone": "02 8043 8810",
-    "email": "reception@vivantmedical.com.au",
-    "website": "https://www.vivantmedical.com.au/",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -208,9 +184,6 @@
     "postcode": "2127",
     "latitude": -33.83240312,
     "longitude": 151.05587784,
-    "phone": "1300 372 372",
-    "email": "",
-    "website": "www.fpnsw.org.au",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -233,9 +206,6 @@
     "postcode": "2127",
     "latitude": -33.83240312,
     "longitude": 151.05587784,
-    "phone": "1300 372 372",
-    "email": "daysurgery@fpnsw.org.au",
-    "website": "https://www.fpnsw.org.au/clinics/day-surgery",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -258,9 +228,6 @@
     "postcode": "2145",
     "latitude": -33.80772078,
     "longitude": 150.9878269,
-    "phone": "1300 003 707",
-    "email": "info@msiaustralia.org.au",
-    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-sydney-west-clinic/",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -283,9 +250,6 @@
     "postcode": "2165",
     "latitude": -33.86863327026367,
     "longitude": 150.95457458496094,
-    "phone": "1300 372 372",
-    "email": "fairfieldappts@fpnsw.org.au",
-    "website": "",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -308,9 +272,6 @@
     "postcode": "2750",
     "latitude": -33.756134033203125,
     "longitude": 150.6939239501953,
-    "phone": "1300 372 372",
-    "email": "penrithappts@fpnsw.org.au",
-    "website": "",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -333,9 +294,6 @@
     "postcode": "2300",
     "latitude": -32.92658223,
     "longitude": 151.77368093,
-    "phone": "1300 372 372",
-    "email": "hunterappts@fpnsw.org.au",
-    "website": "www.fpnsw.org.au",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -358,9 +316,6 @@
     "postcode": "2305",
     "latitude": -32.92264808,
     "longitude": 151.7153576,
-    "phone": "02 4952 7677",
-    "email": "reception@newlambtonfp.com.au",
-    "website": "https://www.evgp.com.au/",
     "hours": {
       "timezone": "Australia/Sydney",
       "weekly_calendar": {}
@@ -383,9 +338,6 @@
     "postcode": "3690",
     "latitude": -36.1366,
     "longitude": 146.8693,
-    "phone": "0260563011",
-    "email": "admin@elmwoodmedical.com.au",
-    "website": "https://elmwoodmedical.com.au/",
     "hours": {
       "timezone": "Australia/Melbourne",
       "weekly_calendar": {}
@@ -408,9 +360,6 @@
     "postcode": "2601",
     "latitude": -35.27785606,
     "longitude": 149.12765671,
-    "phone": "1300 003 707",
-    "email": "",
-    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-canberra-clinic/",
     "hours": {
       "timezone": "Australia/Canberra",
       "weekly_calendar": {}
@@ -433,9 +382,6 @@
     "postcode": "3121",
     "latitude": -37.81237145,
     "longitude": 145.0140643,
-    "phone": "1300 003 707",
-    "email": "",
-    "website": "https://www.msiaustralia.org.au/",
     "hours": {
       "timezone": "Australia/Melbourne",
       "weekly_calendar": {}
@@ -458,9 +404,6 @@
     "postcode": "3053",
     "latitude": -37.79806137084961,
     "longitude": 144.9681854248047,
-    "phone": "03 9347 7711",
-    "email": "",
-    "website": "https://myhealth.net.au/carlton",
     "hours": {
       "timezone": "Australia/Melbourne",
       "weekly_calendar": {}
@@ -483,9 +426,6 @@
     "postcode": "3184",
     "latitude": -37.87324099,
     "longitude": 144.98180023,
-    "phone": "1300 003 707",
-    "email": "msi.eaststkilda@msiaustralia.org.au",
-    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-melbourne-clinic/",
     "hours": {
       "timezone": "Australia/Melbourne",
       "weekly_calendar": {}
@@ -508,9 +448,6 @@
     "postcode": "3029",
     "latitude": -37.84975548,
     "longitude": 144.70273423,
-    "phone": "0388665544",
-    "email": "contact@supernovamedical.com.au",
-    "website": "https://supernovamedical.com.au/",
     "hours": {
       "timezone": "",
       "weekly_calendar": {}
@@ -533,9 +470,6 @@
     "postcode": "",
     "latitude": null,
     "longitude": null,
-    "phone": "1300 003 707",
-    "email": "",
-    "website": "https://www.msiaustralia.org.au/",
     "hours": {
       "timezone": "Australia/Adelaide",
       "weekly_calendar": {}
@@ -558,9 +492,6 @@
     "postcode": "",
     "latitude": null,
     "longitude": null,
-    "phone": "",
-    "email": "",
-    "website": "https://www.clinic66online.com.au/",
     "hours": {
       "timezone": "Australia/Adelaide",
       "weekly_calendar": {}
@@ -583,9 +514,6 @@
     "postcode": "",
     "latitude": null,
     "longitude": null,
-    "phone": "1300 003 707",
-    "email": "",
-    "website": "https://www.msiaustralia.org.au/",
     "hours": {
       "timezone": "Australia/Melbourne",
       "weekly_calendar": {}
@@ -608,9 +536,6 @@
     "postcode": "4227",
     "latitude": -28.0791405,
     "longitude": 153.40990582,
-    "phone": "1300 003 707",
-    "email": "",
-    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-gold-coast-clinic/",
     "hours": {
       "timezone": "Australia/Brisbane",
       "weekly_calendar": {}
@@ -633,9 +558,6 @@
     "postcode": "4217",
     "latitude": -27.999834060668945,
     "longitude": 153.37673950195312,
-    "phone": "07 5618 8616",
-    "email": "",
-    "website": "https://myhealth.net.au/benowa-village/",
     "hours": {
       "timezone": "Australia/Brisbane",
       "weekly_calendar": {}
@@ -658,9 +580,6 @@
     "postcode": "4127",
     "latitude": -27.61745831,
     "longitude": 153.12613682,
-    "phone": "07 3397 1211",
-    "email": "enquiries@gynaehealth.com.au",
-    "website": "https://www.gynaehealth.com.au",
     "hours": {
       "timezone": "Australia/Brisbane",
       "weekly_calendar": {}
@@ -683,9 +602,6 @@
     "postcode": "4006",
     "latitude": -27.44794464111328,
     "longitude": 153.03717041015625,
-    "phone": "1300 003 707",
-    "email": "BowenHillsCentreTeam@msiaustralia.org.au",
-    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-brisbane-clinic/",
     "hours": {
       "timezone": "Australia/Brisbane",
       "weekly_calendar": {}
@@ -708,9 +624,6 @@
     "postcode": "4503",
     "latitude": -27.24960313,
     "longitude": 152.99863818,
-    "phone": "07 3448 0438",
-    "email": "admin@brewerstreetmedical.com.au",
-    "website": "https://brewerstreetmedical.com.au",
     "hours": {
       "timezone": "Australia/Brisbane",
       "weekly_calendar": {}
@@ -733,9 +646,6 @@
     "postcode": "",
     "latitude": null,
     "longitude": null,
-    "phone": "07 3181 4360",
-    "email": "",
-    "website": "https://cqfp.com.au",
     "hours": {
       "timezone": "Australia/Brisbane",
       "weekly_calendar": {}
@@ -758,9 +668,6 @@
     "postcode": "",
     "latitude": null,
     "longitude": null,
-    "phone": "",
-    "email": "",
-    "website": "https://www.qld.gov.au/health/children/pregnancy/termination-of-pregnancy/virtual-early-medical-termination-of-pregnancy-service",
     "hours": {
       "timezone": "Australia/Brisbane",
       "weekly_calendar": {}
@@ -783,9 +690,6 @@
     "postcode": "4812",
     "latitude": -19.277435302734375,
     "longitude": 146.7977752685547,
-    "phone": "07 4772 6222",
-    "email": "reception@hydeparkmedicalcentre.com.au",
-    "website": "https://hydeparkmedicalcentre.com.au/",
     "hours": {
       "timezone": "Australia/Brisbane",
       "weekly_calendar": {}
@@ -808,9 +712,6 @@
     "postcode": "6103",
     "latitude": -31.95557403564453,
     "longitude": 115.91545867919922,
-    "phone": "08 9277 6070",
-    "email": "",
-    "website": "",
     "hours": {
       "timezone": "Australia/Perth",
       "weekly_calendar": {}
@@ -833,9 +734,6 @@
     "postcode": "6056",
     "latitude": -31.892629623413086,
     "longitude": 116.0105209350586,
-    "phone": "1300 003 707",
-    "email": "",
-    "website": "https://www.msiaustralia.org.au/find-a-clinic/msi-perth-clinic/",
     "hours": {
       "timezone": "Australia/Perth",
       "weekly_calendar": {}
@@ -858,9 +756,6 @@
     "postcode": "5011",
     "latitude": -34.88468142,
     "longitude": 138.54208576,
-    "phone": "08 7117 8999",
-    "email": "HealthPAC@sa.gov.au",
-    "website": "http://www.sahealth.sa.gov.au/AbortionSupportServices",
     "hours": {
       "timezone": "Australia/Adelaide",
       "weekly_calendar": {}
@@ -883,9 +778,6 @@
     "postcode": "0810",
     "latitude": -12.39174112,
     "longitude": 130.85691071,
-    "phone": "0889452488",
-    "email": "reception@pandanusmedicalnt.com.au",
-    "website": "https://www.pandanusmedicalnt.com.au",
     "hours": {
       "timezone": "Australia/Darwin",
       "weekly_calendar": {}

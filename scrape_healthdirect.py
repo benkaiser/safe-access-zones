@@ -279,9 +279,6 @@ def normalize_service(service: dict[str, Any]) -> dict[str, Any]:
         'postcode': '',
         'latitude': None,
         'longitude': None,
-        'phone': '',
-        'email': '',
-        'website': '',
         'hours': {},
         'is_virtual': False,
         'appointment_required': False,
@@ -305,16 +302,6 @@ def normalize_service(service: dict[str, Any]) -> dict[str, Any]:
     delivery = service.get('location', {}).get('deliveryMethod', '')
     if delivery == 'VIRTUAL':
         result['is_virtual'] = True
-
-    for contact in service.get('contacts', []):
-        value_type = contact.get('valueType', {}).get('label', '')
-        value = contact.get('value', '')
-        if value_type == 'Phone':
-            result['phone'] = value
-        elif value_type == 'Email':
-            result['email'] = value
-        elif value_type == 'Website':
-            result['website'] = value
 
     calendar = service.get('calendar', {})
     if calendar:
